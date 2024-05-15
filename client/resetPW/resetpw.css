@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.reset-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(248, 252, 224);
+  border-radius: 10px;
+  box-shadow: 0 3px 5px black;
+}
+.form-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 1px 1px black;
+  margin: 0;
+}
+.inputs {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.inputs > label:not(:last-child) {
+  width: 50px;
+  margin-right: 5px;
+}
+.email-input,
+.pin-inputs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  align-items: center;
+  width: 100%;
+}
+input[type="email"] {
+  width: 200px;
+}
+.pin-input {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+}
+
+.pin-input input[type="tel"] {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.pin-input input[type="tel"]:last-child {
+  margin-right: 0;
+}
+.new-pw-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.new-pw-input label {
+  margin-bottom: 10px;
+}
+.new-pw-input input {
+  width: 200px;
+}
+.separator {
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.reset-btn {
+  width: 150px;
+  border-radius: 5px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  background-color: rgb(0, 179, 48);
+  color: white;
+  cursor: pointer;
+}

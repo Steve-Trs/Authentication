@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forgot password</title>
+    <link rel="stylesheet" href="./forgotPW.css" />
+  </head>
+  <body>
+    <div class="forgot-page">
+      <div class="form-container">
+        <form action="" class="forgot-form" method="post">
+          <div class="text">
+            <h2 class="form-title">Forgot Password</h2>
+            <p>To reset your password, enter your email and click submit...</p>
+          </div>
+
+          <div class="inputs">
+            <div class="email-input">
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" />
+            </div>
+          </div>
+          <button type="submit" id="forgot-btn" class="forgot-btn">
+            Submit
+          </button>
+          <div class="links-forgot">
+            <span class="remember-pw"
+              >Remember password?<br /><a href="../login/login.html"
+                >click here!</a
+              ></span
+            >
+          </div>
+        </form>
+      </div>
+      <div class="popup">
+        <div className="popup-content">
+          <p>
+            An email has been sent to you with a code pin to reset you password!
+          </p>
+          <button type="">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="./forgotpw.js"></script>
+  </body>
+</html>
